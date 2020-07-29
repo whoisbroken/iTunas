@@ -1,3 +1,3 @@
 export function radioPlayerInit () {
-  console.log('work');
+  console.log('radioPlayerInit');
 }

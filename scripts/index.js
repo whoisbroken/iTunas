@@ -1,6 +1,7 @@
+import { videoPlayerInit } from './videoPlayer.js';
 import { radioPlayerInit } from './radioPlayer.js';
+import { musicPlayerInit } from './musicPlayer.js';
 
-radioPlayerInit();
 
 // vars
 
@@ -22,3 +23,7 @@ playerBtn.forEach((btn,i) => {
     playerBlock[i].classList.add('active');
   })
 })
+
+videoPlayerInit();
+radioPlayerInit();
+musicPlayerInit();
