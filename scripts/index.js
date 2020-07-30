@@ -4,7 +4,6 @@ import { musicPlayerInit } from './musicPlayer.js';
 
 
 // vars
-
 const playerBtn = document.querySelectorAll('.player-btn'),
       playerBlock = document.querySelectorAll('.player-block'),
       temp = document.querySelector('.temp');

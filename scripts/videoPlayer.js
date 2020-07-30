@@ -1,3 +1,5 @@
+import { addZero } from './supScript.js'
+
 export const videoPlayerInit = () => {
 
   // vars
@@ -35,11 +37,7 @@ export const videoPlayerInit = () => {
     videoPlayer.currentTime = 0;
   }
 
-  // add zero before minutes/second if number < 10
-  const addZero = n => n < 10 ? '0' + n : n;
-
-
-  // event listeners
+  // event listeners:
   videoPlayer.addEventListener('click', togglePlay);
   videoButtonPlay.addEventListener('click', togglePlay);
 
@@ -48,7 +46,7 @@ export const videoPlayerInit = () => {
 
   videoButtonStop.addEventListener('click', stopPlay);
 
-  // display time bar
+  // count/display time bar 
   videoPlayer.addEventListener('timeupdate', () => {
     const currentTime = videoPlayer.currentTime;
     const duration = videoPlayer.duration;
